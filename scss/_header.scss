@@ -1,0 +1,224 @@
+header{
+    width: 100%;
+    height: 40rem;
+    background: url(../images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(to right, hsl(13, 100%, 72%) 30%, hsl(353, 100%, 62%) 86%);
+    background-position: 24% 52%;
+    border-radius: 0rem 0rem 0rem 6rem; 
+        .header_up{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 5rem;
+            margin-bottom: 10rem;
+                .header_logo_nav{
+                    width: 100%;
+                    max-width: 35rem;
+                    display: flex;
+                    justify-content: space-between;
+                        ul{
+                            width: 100%;
+                            max-width: 24rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                                li{
+                                    width: 100%;
+                                    max-width: 5rem;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    font-size: 1.15rem;
+                                    color: $White;
+                                    font-family: 'Overpass', sans-serif;
+                                    cursor: pointer;
+                                    transition: 0.4s;
+                                        &:hover{
+                                            color: white;
+                                            transform: scale(1.03);
+                                            text-decoration: underline;
+                                        }
+                                }
+                                .drop_down{
+                                    content: "";
+                                    width: 100%;
+                                    max-width: 10rem;
+                                    height: 13rem;
+                                    position: absolute;
+                                    opacity: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    left: 10rem;
+                                    top: 8rem;
+                                    background-color: white;
+                                    border-radius: 13px;
+                                    padding: 0.7rem;
+                                        li{
+                                            color: $Very-dark-black-blue;
+                                            font-family: 'Overpass', sans-serif;
+                                            font-weight: 700;
+                                                &:hover{
+                                                    color: black;
+                                                    transform: scale(1.02);
+                                                }
+                                        }
+                                }
+                                .show{
+                                    opacity: 1;
+                                    transition: 0.6s;
+                                }
+                                .drop_company{
+                                    content: "";
+                                    width: 100%;
+                                    max-width: 10rem;
+                                    height: 10rem;
+                                    position: absolute;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    opacity: 0;
+                                    left: 21.93rem;
+                                    top: 8rem;
+                                    background-color: white;
+                                    border-radius: 13px;
+                                    padding: 1rem;
+                                        li{
+                                            color: $Very-dark-black-blue;
+                                            font-family: 'Overpass', sans-serif;
+                                            font-weight: 700;
+                                        }
+                                }
+                                .show{
+                                    opacity: 1;
+                                    transition: 0.6s;
+                                }
+                                .drop_connect{
+                                    content: "";
+                                    width: 100%;
+                                    max-width: 10rem;
+                                    height: 8rem;
+                                    position: absolute;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    opacity: 0;
+                                    left: 32.93rem;
+                                    top: 8rem;
+                                    background-color: white;
+                                    border-radius: 13px;
+                                    padding: 1rem;
+                                        li{
+                                            color: $Very-dark-black-blue;
+                                            font-family: 'Overpass', sans-serif;
+                                            font-weight: 700;
+                                        }
+                                }
+                                .show{
+                                    opacity: 1;
+                                    transition: 0.6s;
+                                }
+                        }
+                }
+                .login_sign{
+                    width: 100%;
+                    max-width: 15rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                        a{  
+                            font-family: 'Overpass', sans-serif;
+                            font-size: 1.2rem;
+                            color: $White;
+                            transition: 0.4s;
+                                &:hover{
+                                    color: white;
+                                    transform: scale(1.03);
+                                }
+                        }
+                        .btn_sign{
+                            width: 100%;
+                            max-width: 10rem;
+                            height: 3rem;
+                            border-radius: 25px;
+                            background-color: white;
+                            border: none;
+                            font-size: 1.15rem;
+                            font-family: 'Overpass', sans-serif;
+                            font-weight: 600;
+                            color: $Light-red;
+                            cursor: pointer;
+                            transition: 0.4s;
+                                &:hover{
+                                    background-color: transparent;
+                                    border: 0.17rem $White solid;
+                                    color: $White;
+                                    transform: scale(1.05);
+                                }
+                        }
+                }
+        }
+        .header_down{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                h1{
+                    color: $White;
+                    font-size: 3.8rem;
+                    font-family: 'Overpass', sans-serif;
+                    font-weight: 500;
+                }
+                .header_under_h1{
+                    color: $Grayish-blue;
+                    font-size: 1.4rem;
+                    font-family: 'Overpass', sans-serif;
+                    font-weight: 400;
+                    margin-bottom: 4rem;
+                }
+                .btn_start{
+                    width: 100%;
+                    max-width: 25rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                        .start{
+                            width: 100%;
+                            max-width: 12rem;
+                            height: 3rem;
+                            border-radius: 25px;
+                            border: none;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: $Light-red;
+                            cursor: pointer;
+                            transition: 0.4s;
+                                &:hover{
+                                    background-color: transparent;
+                                    color: $White;
+                                    border: 0.17rem $White solid;
+                                }
+                        }
+                        .learn{
+                            width: 100%;
+                            max-width: 12rem;
+                            height: 3rem;
+                            border-radius: 25px;
+                            border: 0.17rem $White solid;
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: $White;
+                            background-color: transparent;
+                            cursor: pointer;
+                            transition: 0.4s;
+                                &:hover{
+                                    background-color: white;
+                                    color: $Light-red;
+                                    transform: scale(1.02);
+                                }
+                        }
+                }
+        }
+}
