@@ -1,0 +1,32 @@
+main{
+    h2{
+        text-align: center;
+        font-size: 2.3rem;
+        font-family: 'Ubunto', sans-serif;
+        color: $Very-dark-blue;
+    }
+    .first_content{
+        display: flex;
+            .article{
+                width: 50%;
+                padding: 7rem;
+                    h3{
+                        font-size: 1.5rem;
+                        font-family: 'Overpass', sans-serif;
+                        color: $Very-dark-blue;
+                        margin-bottom: 1.5rem;
+                    }
+                    .article_p{
+                        font-family: 'Overpass', sans-serif;
+                        font-size: 0.99rem;
+                        margin-bottom: 2rem;
+                    }
+            }
+            .img_cam{
+                width: 50%;
+                    .editor{
+                        width: 100%;
+                    }
+            }
+    }
+}

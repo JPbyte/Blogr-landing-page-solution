@@ -5,6 +5,7 @@ header {
   background: url(../images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(to right, hsl(13deg, 100%, 72%) 30%, hsl(353deg, 100%, 62%) 86%);
   background-position: 24% 52%;
   border-radius: 0rem 0rem 0rem 6rem;
+  margin-bottom: 7rem;
 }
 header .header_up {
   display: flex;
@@ -43,6 +44,10 @@ header .header_up .header_logo_nav ul li:hover {
   transform: scale(1.03);
   text-decoration: underline;
 }
+header .header_up .header_logo_nav ul .rotate {
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
 header .header_up .header_logo_nav ul .drop_down {
   content: "";
   width: 100%;
@@ -59,6 +64,7 @@ header .header_up .header_logo_nav ul .drop_down {
   background-color: white;
   border-radius: 13px;
   padding: 0.7rem;
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.19);
 }
 header .header_up .header_logo_nav ul .drop_down li {
   color: hsl(240deg, 10%, 16%);
@@ -71,7 +77,8 @@ header .header_up .header_logo_nav ul .drop_down li:hover {
 }
 header .header_up .header_logo_nav ul .show {
   opacity: 1;
-  transition: 0.6s;
+  -webkit-animation: fade-in 0.4s;
+          animation: fade-in 0.4s;
 }
 header .header_up .header_logo_nav ul .drop_company {
   content: "";
@@ -89,6 +96,7 @@ header .header_up .header_logo_nav ul .drop_company {
   background-color: white;
   border-radius: 13px;
   padding: 1rem;
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.19);
 }
 header .header_up .header_logo_nav ul .drop_company li {
   color: hsl(240deg, 10%, 16%);
@@ -97,7 +105,7 @@ header .header_up .header_logo_nav ul .drop_company li {
 }
 header .header_up .header_logo_nav ul .show {
   opacity: 1;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 header .header_up .header_logo_nav ul .drop_connect {
   content: "";
@@ -115,6 +123,7 @@ header .header_up .header_logo_nav ul .drop_connect {
   background-color: white;
   border-radius: 13px;
   padding: 1rem;
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.19);
 }
 header .header_up .header_logo_nav ul .drop_connect li {
   color: hsl(240deg, 10%, 16%);
@@ -123,7 +132,11 @@ header .header_up .header_logo_nav ul .drop_connect li {
 }
 header .header_up .header_logo_nav ul .show {
   opacity: 1;
-  transition: 0.6s;
+  transition: 0.4s;
+}
+header .header_up .header_logo_nav .logo {
+  -webkit-animation: fade-in 1s;
+          animation: fade-in 1s;
 }
 header .header_up .login_sign {
   width: 100%;
@@ -235,4 +248,53 @@ header .header_down .btn_start .learn:hover {
 body {
   width: 100%;
   min-height: 100vh;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: "Ubunto", sans-serif;
+  color: hsl(208deg, 49%, 24%);
+}
+main .first_content {
+  display: flex;
+}
+main .first_content .article {
+  width: 50%;
+  padding: 7rem;
+}
+main .first_content .article h3 {
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(208deg, 49%, 24%);
+  margin-bottom: 1.5rem;
+}
+main .first_content .article .article_p {
+  font-family: "Overpass", sans-serif;
+  font-size: 0.99rem;
+  margin-bottom: 2rem;
+}
+main .first_content .img_cam {
+  width: 50%;
+}
+main .first_content .img_cam .editor {
+  width: 100%;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=main.css.map */

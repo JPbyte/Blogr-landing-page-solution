@@ -4,6 +4,7 @@ header{
     background: url(../images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(to right, hsl(13, 100%, 72%) 30%, hsl(353, 100%, 62%) 86%);
     background-position: 24% 52%;
     border-radius: 0rem 0rem 0rem 6rem; 
+    margin-bottom: 7rem;
         .header_up{
             display: flex;
             width: 100%;
@@ -38,6 +39,10 @@ header{
                                             text-decoration: underline;
                                         }
                                 }
+                                .rotate{
+                                    transform: rotate(180deg);
+                                    transition: 0.4s;
+                                }
                                 .drop_down{
                                     content: "";
                                     width: 100%;
@@ -54,6 +59,7 @@ header{
                                     background-color: white;
                                     border-radius: 13px;
                                     padding: 0.7rem;
+                                    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.19);
                                         li{
                                             color: $Very-dark-black-blue;
                                             font-family: 'Overpass', sans-serif;
@@ -66,7 +72,7 @@ header{
                                 }
                                 .show{
                                     opacity: 1;
-                                    transition: 0.6s;
+                                    animation: fade-in 0.4s;
                                 }
                                 .drop_company{
                                     content: "";
@@ -84,6 +90,7 @@ header{
                                     background-color: white;
                                     border-radius: 13px;
                                     padding: 1rem;
+                                    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.19);
                                         li{
                                             color: $Very-dark-black-blue;
                                             font-family: 'Overpass', sans-serif;
@@ -92,7 +99,7 @@ header{
                                 }
                                 .show{
                                     opacity: 1;
-                                    transition: 0.6s;
+                                    transition: 0.4s;
                                 }
                                 .drop_connect{
                                     content: "";
@@ -110,6 +117,7 @@ header{
                                     background-color: white;
                                     border-radius: 13px;
                                     padding: 1rem;
+                                    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.19);
                                         li{
                                             color: $Very-dark-black-blue;
                                             font-family: 'Overpass', sans-serif;
@@ -118,8 +126,11 @@ header{
                                 }
                                 .show{
                                     opacity: 1;
-                                    transition: 0.6s;
+                                    transition: 0.4s;
                                 }
+                        }
+                        .logo{
+                            animation: fade-in 1s;
                         }
                 }
                 .login_sign{
