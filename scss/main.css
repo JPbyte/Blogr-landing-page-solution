@@ -6,6 +6,7 @@ header {
   background-position: 24% 52%;
   border-radius: 0rem 0rem 0rem 6rem;
   margin-bottom: 7rem;
+  overflow-x: hidden;
 }
 header .header_up {
   display: flex;
@@ -251,6 +252,66 @@ body {
   overflow-x: hidden;
 }
 
+footer {
+  width: 100%;
+  height: 25rem;
+  background-color: hsl(237deg, 17%, 21%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 6rem;
+}
+footer .footer_content {
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer_content p {
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+footer .footer_content ul {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: hsl(0deg, 0%, 93%);
+}
+footer .footer_content ul li {
+  cursor: pointer;
+  transition: 0.4s;
+}
+footer .footer_content ul li:hover {
+  transform: scale(1.03);
+  color: white;
+}
+footer .footer_content_connect {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer_content_connect p {
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+footer .footer_content_connect ul {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: hsl(0deg, 0%, 93%);
+}
+footer .footer_content_connect ul li {
+  cursor: pointer;
+  transition: 0.4s;
+}
+footer .footer_content_connect ul li:hover {
+  transform: scale(1.03);
+  color: white;
+}
+
+main {
+  overflow-x: hidden;
+}
 main h2 {
   text-align: center;
   font-size: 2.3rem;
@@ -273,7 +334,7 @@ main .first_content .article h3 {
 }
 main .first_content .article .article_p {
   font-family: "Overpass", sans-serif;
-  font-size: 0.99rem;
+  font-size: 1.22rem;
   margin-bottom: 2rem;
 }
 main .first_content .img_cam {
@@ -341,7 +402,7 @@ main .third_content .laptop_article h2 {
   font-family: "Overpass", sans-serif;
 }
 main .third_content .laptop_article p {
-  font-size: 1.09rem;
+  font-size: 1.22rem;
   font-family: "Overpass", sans-serif;
   letter-spacing: 0.05rem;
 }
