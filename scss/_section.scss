@@ -7,6 +7,7 @@ main{
     }
     .first_content{
         display: flex;
+        margin-bottom: 2rem;
             .article{
                 width: 50%;
                 padding: 7rem;
@@ -26,6 +27,69 @@ main{
                 width: 50%;
                     .editor{
                         width: 100%;
+                    }
+            }
+    }
+    .secund_content{
+        height: 31rem;
+        display: flex;
+        background: url(../images/bg-pattern-circles.svg) no-repeat;
+        background-color: $Very-dark-desaturated-blue;
+        background-position-x: -13rem;
+        background-position-y: -33rem;
+        border-radius: 0rem 7rem 0rem 7rem;
+        margin-bottom: 7rem;
+            .img_phones{
+                width: 40%;
+            }
+            .phones_article{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                    .phones_h2{
+                        width: 100%;
+                        color: white;
+                        text-align: initial;
+                        font-family: 'Overpass', sans-serif;
+                        font-weight: 400;
+                    }
+                    .phone_p{
+                        width: 100%;
+                        max-width: 41rem;
+                        line-height: 1.7rem;
+                        font-size: 1.3rem;
+                        font-family: 'Overpass', sans-serif;
+                        font-weight: 400;
+                        color: rgb(199, 195, 195);
+                    }
+            }
+    }
+    .third_content{
+        display: flex;
+            .img_laptop{
+                 width: 56%;
+                 margin-left: -14rem;
+                    img{
+                        width: 100%;
+                    }
+            }
+            .laptop_article{
+                width: 41%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: baseline;
+                height: 22rem;
+                    h2{
+                        font-size: 1.9rem;
+                        font-weight: 580;
+                        font-family: 'Overpass', sans-serif;
+                    }
+                    p{
+                        font-size: 1.09rem;
+                        font-family: 'Overpass', sans-serif;
+                        letter-spacing: 0.05rem;
                     }
             }
     }

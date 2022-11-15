@@ -26,6 +26,3 @@ dropThird.addEventListener("click", () =>{
     arrowThree.classList.toggle("rotate")
 })
 
-AOS.init({
-    duration: 1000
-});

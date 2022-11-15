@@ -53,17 +53,37 @@
   </header>
   <main>
     <h2>Designed for the future</h2>
-      <div class="first_content" data-aos="fade-down">
+      <div class="first_content">
         <section class="article">
-          <h3>Introducing an extensible editor</h3>
-            <p class="article_p">Blogr features an exceedingly inuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation embeds such as images,videos, and Markdown. Extensibility or change the looks of a blog.</p>
-              <h3>Robust content management</h3>
-                <p class="article_p">Flexible content management enables users to easily move through posts.Increase the usability of your blog by adding custumized caregories, sections, format, or flow. with this functionality, you´re in full control</p>
-        </section>
-        <section class="img_cam">
-          <img class="editor" src="images/illustration-editor-desktop.svg" alt="">
-        </section>
-    </div>
+          <h3 data-aos="fade-right">Introducing an extensible editor</h3>
+            <p class="article_p" data-aos="fade-right">Blogr features an exceedingly inuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation embeds such as images,videos, and Markdown. Extensibility or change the looks of a blog.</p>
+              <h3 data-aos="fade-right">Robust content management</h3>
+                <p class="article_p" data-aos="fade-right">Flexible content management enables users to easily move through posts.Increase the usability of your blog by adding custumized caregories, sections, format, or flow. with this functionality, you´re in full control.</p>
+                  </section>
+                    <section class="img_cam" data-aos="fade-up-left">
+                      <img class="editor" src="images/illustration-editor-desktop.svg" alt="">
+                    </section>
+                    </div>
+                    <div class="secund_content">
+                      <div class="img_phones" data-aos="flip-up">
+                        <img src="images/illustration-phones.svg" alt="icon-phones">
+                      </div> 
+                      <div class="phones_article">
+                        <h2 class="phones_h2" data-aos="fade-left">State of the Art Infrastructure</h2>
+                          <p class="phone_p" data-aos="fade-left" data-aos-duration="1200">With reliability and speed in mind. worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+                      </div>
+                    </div>
+                    <div class="third_content">
+                      <div class="img_laptop" data-aos="fade-right" data-aos-duration="1200">
+                        <img src="images/illustration-laptop-desktop.svg" alt="icon-laptop">
+                      </div> 
+                      <div class="laptop_article">
+                        <h2 class="laptop_h2" data-aos="fade-left">Free, open, simple</h2>
+                          <p class="laptop_p" data-aos="fade-left" data-aos-duration="1200">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                            <h2 class="laptop_h2" data-aos="fade-left">Powerful tooling</h2>
+                              <p class="laptop_p" data-aos="fade-left" data-aos-duration="1200">Batteries included. we built a simple and straighforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                      </div>
+                    </div>
   </main>
 
 
@@ -71,7 +91,9 @@
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800
+    });
   </script>
 </body>
 </html>

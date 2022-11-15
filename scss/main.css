@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap");
 header {
   width: 100%;
-  height: 40rem;
+  height: 50rem;
   background: url(../images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(to right, hsl(13deg, 100%, 72%) 30%, hsl(353deg, 100%, 62%) 86%);
   background-position: 24% 52%;
   border-radius: 0rem 0rem 0rem 6rem;
@@ -12,7 +12,7 @@ header .header_up {
   width: 100%;
   justify-content: space-between;
   padding: 5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 11rem;
 }
 header .header_up .header_logo_nav {
   width: 100%;
@@ -248,6 +248,7 @@ header .header_down .btn_start .learn:hover {
 body {
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 main h2 {
@@ -258,6 +259,7 @@ main h2 {
 }
 main .first_content {
   display: flex;
+  margin-bottom: 2rem;
 }
 main .first_content .article {
   width: 50%;
@@ -279,6 +281,69 @@ main .first_content .img_cam {
 }
 main .first_content .img_cam .editor {
   width: 100%;
+}
+main .secund_content {
+  height: 31rem;
+  display: flex;
+  background: url(../images/bg-pattern-circles.svg) no-repeat;
+  background-color: hsl(237deg, 23%, 32%);
+  background-position-x: -13rem;
+  background-position-y: -33rem;
+  border-radius: 0rem 7rem 0rem 7rem;
+  margin-bottom: 7rem;
+}
+main .secund_content .img_phones {
+  width: 40%;
+}
+main .secund_content .phones_article {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .secund_content .phones_article .phones_h2 {
+  width: 100%;
+  color: white;
+  text-align: initial;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+main .secund_content .phones_article .phone_p {
+  width: 100%;
+  max-width: 41rem;
+  line-height: 1.7rem;
+  font-size: 1.3rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: rgb(199, 195, 195);
+}
+main .third_content {
+  display: flex;
+}
+main .third_content .img_laptop {
+  width: 56%;
+  margin-left: -14rem;
+}
+main .third_content .img_laptop img {
+  width: 100%;
+}
+main .third_content .laptop_article {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 22rem;
+}
+main .third_content .laptop_article h2 {
+  font-size: 1.9rem;
+  font-weight: 580;
+  font-family: "Overpass", sans-serif;
+}
+main .third_content .laptop_article p {
+  font-size: 1.09rem;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 @-webkit-keyframes fade-in {
