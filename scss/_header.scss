@@ -34,7 +34,7 @@ header{
                     display: none;
                     justify-content: center;
                     width: 79%;
-                    height: 27rem;
+                    height: 20rem;
                     left: 5rem;
                     top: 8rem;
                     background-color: $White;
@@ -56,9 +56,10 @@ header{
                                 }
                                 .drop_drop{
                                     display: none;
+                                    height: 10rem;
                                         li{
                                             text-align: center;
-                                            font-size: 1rem;
+                                            font-size: 1.2rem;
                                             color: $Very-dark-black-blue;
                                             transition: 0.4s;
                                             cursor: pointer;
@@ -75,17 +76,6 @@ header{
                                                 }
                                         }
                                 }
-                        }
-                        &::after{
-                            content: "";
-                            right: 0rem;
-                            top: -1rem;
-                            position: absolute;
-                            border-right: 50px $White solid;
-                            border-left: 30px transparent solid;
-                            border-top: 30px transparent solid;
-                            border-bottom: 30px $White solid;
-                            
                         }
                 }
                 .header_logo_nav{
@@ -313,6 +303,10 @@ header{
 @media (max-width: 1000px){
     margin-bottom: 1rem;
     .header_up{
+        #drop_down{
+            width: 100%;
+            left: 0rem;
+        }
         .menu{
             display: flex;
         }
@@ -336,9 +330,26 @@ header{
         }
     }
 }
+@media (max-width: 425px) {
+    .header_up{
+        padding: 3rem;
+            #drop_down{
+                width: 100%;
+                left: 0rem;
+                top: 7rem;
+                height: 30rem;
+            }
+    }
+}
 @media (max-width: 375px) {
         .header_up{
             padding: 3rem;
+                #drop_down{
+                    width: 100%;
+                    left: 0rem;
+                    top: 7rem;
+                    height: 30rem;
+                }
         }
         .header_down{
             .btn_start{
@@ -358,6 +369,11 @@ header{
     .header_down{
         .header_up{
             padding: 3rem;
+                #drop_down{
+                    width: 100%;
+                    left: 0rem;
+                    top: 6rem;
+                }
         }
         .btn_start{
             justify-content: space-around;

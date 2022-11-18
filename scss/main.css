@@ -37,7 +37,7 @@ header .header_up #drop_down {
   display: none;
   justify-content: center;
   width: 79%;
-  height: 27rem;
+  height: 20rem;
   left: 5rem;
   top: 8rem;
   background-color: hsl(0deg, 0%, 100%);
@@ -61,10 +61,11 @@ header .header_up #drop_down ul .product_drop::after, header .header_up #drop_do
 }
 header .header_up #drop_down ul .drop_drop {
   display: none;
+  height: 10rem;
 }
 header .header_up #drop_down ul .drop_drop li {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: hsl(240deg, 10%, 16%);
   transition: 0.4s;
   cursor: pointer;
@@ -79,16 +80,6 @@ header .header_up #drop_down ul .drop_drop li a:hover {
 header .header_up #drop_down ul .drop_drop li:hover {
   color: hsl(353deg, 100%, 62%);
   transform: scale(1.05);
-}
-header .header_up #drop_down::after {
-  content: "";
-  right: 0rem;
-  top: -1rem;
-  position: absolute;
-  border-right: 50px hsl(0deg, 0%, 100%) solid;
-  border-left: 30px transparent solid;
-  border-top: 30px transparent solid;
-  border-bottom: 30px hsl(0deg, 0%, 100%) solid;
 }
 header .header_up .header_logo_nav {
   width: 100%;
@@ -317,6 +308,10 @@ header .header_down .btn_start .learn:hover {
   header {
     margin-bottom: 1rem;
   }
+  header .header_up #drop_down {
+    width: 100%;
+    left: 0rem;
+  }
   header .header_up .menu {
     display: flex;
   }
@@ -335,9 +330,26 @@ header .header_down .btn_start .learn:hover {
     font-size: 1rem;
   }
 }
+@media (max-width: 425px) {
+  header .header_up {
+    padding: 3rem;
+  }
+  header .header_up #drop_down {
+    width: 100%;
+    left: 0rem;
+    top: 7rem;
+    height: 30rem;
+  }
+}
 @media (max-width: 375px) {
   header .header_up {
     padding: 3rem;
+  }
+  header .header_up #drop_down {
+    width: 100%;
+    left: 0rem;
+    top: 7rem;
+    height: 30rem;
   }
   header .header_down .btn_start {
     justify-content: space-around;
@@ -354,6 +366,11 @@ header .header_down .btn_start .learn:hover {
 @media (max-width: 320px) {
   header .header_down .header_up {
     padding: 3rem;
+  }
+  header .header_down .header_up #drop_down {
+    width: 100%;
+    left: 0rem;
+    top: 6rem;
   }
   header .header_down .btn_start {
     justify-content: space-around;
