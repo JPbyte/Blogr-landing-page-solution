@@ -12,6 +12,82 @@ header{
             justify-content: space-between;
             padding: 5rem;
             margin-bottom: 11rem;
+                .menu{
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                        #menu_img{
+                            display: flex;
+                            cursor: pointer;
+                        }
+                        #close_img{
+                            display: none;
+                            cursor: pointer;
+                        }
+                }
+                .active{
+                    display: flex;
+                }
+                #drop_down{
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    justify-content: center;
+                    width: 79%;
+                    height: 27rem;
+                    left: 5rem;
+                    top: 8rem;
+                    background-color: $White;
+                    border-top: 1rem;
+                    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.10);
+                        ul{   
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            font-size: 1.5rem;
+                                .product_drop, .company_drop, .connect_drop{
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-items: center;
+                                    cursor: pointer;
+                                        &::after{
+                                            transform: scale(1.03);
+                                        }
+                                }
+                                .drop_drop{
+                                    display: none;
+                                        li{
+                                            text-align: center;
+                                            font-size: 1rem;
+                                            color: $Very-dark-black-blue;
+                                            transition: 0.4s;
+                                            cursor: pointer;
+                                                a{
+                                                    color: $Very-dark-black-blue;
+                                                        &:hover{
+                                                            color: $Light-red;
+                                                            transform: scale(1.05);
+                                                        }
+                                                }
+                                                &:hover{
+                                                    color: $Light-red;
+                                                    transform: scale(1.05);
+                                                }
+                                        }
+                                }
+                        }
+                        &::after{
+                            content: "";
+                            right: 0rem;
+                            top: -1rem;
+                            position: absolute;
+                            border-right: 50px $White solid;
+                            border-left: 30px transparent solid;
+                            border-top: 30px transparent solid;
+                            border-bottom: 30px $White solid;
+                            
+                        }
+                }
                 .header_logo_nav{
                     width: 100%;
                     max-width: 35rem;
@@ -60,6 +136,7 @@ header{
                                     background-color: white;
                                     border-radius: 13px;
                                     padding: 0.7rem;
+                                    cursor: pointer;
                                     box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.19);
                                         li{
                                             color: $Very-dark-black-blue;
@@ -233,4 +310,66 @@ header{
                         }
                 }
         }
+@media (max-width: 1000px){
+    margin-bottom: 1rem;
+    .header_up{
+        .menu{
+            display: flex;
+        }
+        .header_logo_nav{
+            ul{
+                display: none;
+            }
+        }
+        .login_sign{
+            display: none;
+        }
+    }
+    .header_down{
+        h1{
+            text-align: center;
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-width: 375px) {
+        .header_up{
+            padding: 3rem;
+        }
+        .header_down{
+            .btn_start{
+                justify-content: space-around;
+                    .start{
+                        max-width: 8rem;
+                        font-size: 0.9rem;
+                    }
+                    .learn{
+                        max-width: 8rem;
+                        font-size: 0.9rem;
+                    }
+            }
+        }
+}
+@media (max-width: 320px) {
+    .header_down{
+        .header_up{
+            padding: 3rem;
+        }
+        .btn_start{
+            justify-content: space-around;
+                .start{
+                    max-width: 8rem;
+                    font-size: 0.9rem;
+                }
+                .learn{
+                    max-width: 8rem;
+                    font-size: 0.9rem;
+                }
+        }
+    }
+}
 }

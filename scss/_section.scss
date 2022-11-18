@@ -94,4 +94,226 @@ main{
                     }
             }
     }
+@media (max-width: 1024px) {
+    .first_content{
+        .article{
+            padding: 3rem;
+        }
+    }
+    .secund_content{
+        .img_phones{
+            img{
+                width: 100%;
+            }
+        }
+        .phones_article{
+            width: 50%;
+        }
+    }
+    .third_content{
+        height: 35rem;
+        justify-content: space-evenly;
+        .laptop_article{
+            width: 55%;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .first_content{
+        flex-direction: column-reverse;
+        align-items: center;
+            .article{
+                width: 50%;
+                padding: 3rem 1rem;
+            }
+    }
+    .secund_content{
+        flex-direction: column;
+        align-items: center;
+        height: 40rem;
+            .img_phones{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                    img{
+                        width: 60%;
+                        position: absolute;
+                        top: -6rem;
+                    }
+            }
+            .phones_article{
+                height: 35rem;
+                justify-content: flex-end;
+                    .phones_h2{
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+                    .phone_p{
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+            }
+    }
+    .third_content{
+        flex-direction: column;
+        align-items: center;
+            .img_laptop{
+                margin-left: 0;
+            }
+    }
+}
+@media (max-width: 800px) {
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .first_content{
+        margin-bottom: 5rem;
+        .article{
+            width: 100%;
+            padding: 2rem 1rem;
+                h3{
+                    font-size: 1.8rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+        }
+    }
+    .secund_content{
+        background-size: contain;
+        background-position-x: 0;
+        background-position-y: 0;
+        .img_phones{
+            width: 80%;
+        }
+        .phones_article{
+            width: 50%;
+            height: 34rem;
+            .phones_h2{
+                font-size: 2.4rem;
+                margin-bottom: 1rem;
+            }
+            .phone_p{
+                font-size: 1.22rem;
+            }
+        }
+    }
+    .third_content{
+        height: 50rem;
+        margin-bottom: 2rem;
+        .laptop_article{
+            width: 55%;
+            height: 35rem;
+                h2{
+                    width: 100%;
+                    font-size: 2.4rem;
+                }
+                p{
+                    font-size: 1.22rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+        }
+    }
+}
+@media (max-width: 375px) {
+    h2{
+        font-size: 1.6rem;
+    }
+    .first_content{
+        margin-bottom: 5rem;
+        .article{
+            width: 100%;
+            padding: 2rem 1rem;
+                h3{
+                    font-size: 1.25rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+        }
+    }
+    .secund_content{
+        background-size: contain;
+        background-position-x: 0;
+        background-position-y: 0;
+        .phones_article{
+            width: 90%;
+            height: 29rem;
+            .phones_h2{
+                font-size: 1.7rem;
+                margin-bottom: 1rem;
+            }
+            .phone_p{
+                font-size: 1.22rem;
+            }
+        }
+    }
+    .third_content{
+        margin-bottom: 2rem;
+        .laptop_article{
+            width: 85%;
+            height: 43rem;
+                h2{
+                    width: 100%;
+                    font-size: 1.7rem;
+                }
+                p{
+                    font-size: 1.22rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+        }
+    }
+}
+@media (max-width: 320px) {
+    h2{
+        font-size: 1.6rem;
+    }
+    .first_content{
+        .article{
+            width: 100%;
+            padding: 2rem 1rem;
+                h3{
+                    font-size: 1.25rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+        }
+    }
+    .secund_content{
+        background-size: contain;
+        background-position-x: 0;
+        background-position-y: 0;
+        .phones_article{
+            width: 96%;
+            height: 29rem;
+            .phones_h2{
+                font-size: 1.7rem;
+            }
+            .phone_p{
+                font-size: 1.22rem;
+            }
+        }
+    }
+    .third_content{
+        margin-bottom: 2rem;
+        .laptop_article{
+            width: 85%;
+            height: 43rem;
+                h2{
+                    width: 100%;
+                    font-size: 1.7rem;
+                }
+                p{
+                    font-size: 1.22rem;
+                    text-align: center;
+                }
+        }
+    }
+}
 }

@@ -24,7 +24,7 @@ footer{
                             transition: 0.4s;
                                 &:hover{
                                     transform: scale(1.03);
-                                    color: white;
+                                    color: $Light-red;
                                 }
                         }
                 }
@@ -48,9 +48,27 @@ footer{
                             transition: 0.4s;
                                 &:hover{
                                     transform: scale(1.03);
-                                    color: white;
+                                    color: $Light-red;
                                 }
                         }
                 }
         }
+@media (max-width: 1000px) {
+    height: 54rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0rem 7rem 0rem 0rem;
+        .footer_content{
+            align-items: center;
+            width: 100%;
+            max-width: 6rem;
+        }
+        .footer_content_connect{
+            align-items: center;
+            width: 100%;
+            max-width: 6rem;
+        }
+}
 }
