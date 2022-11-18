@@ -33,8 +33,8 @@ Desktop design
 
 ### Links
 
-- Solution URL: [Blogr landing page solution](https://your-solution-url.com)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [Blogr landing page solution]()
+- Live Site URL: [](https://jpbyte.github.io/Blogr-landing-page-solution/)
 
 ## My process
 
